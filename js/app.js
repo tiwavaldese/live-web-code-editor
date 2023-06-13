@@ -35,3 +35,58 @@ function show_all(){
         document.getElementById("result").style.display="none";
     }
 }
+
+let htmlCode = document.querySelector("#htmlCode");
+let cssCode = document.querySelector("#cssCode");
+let jsCode = document.querySelector("#jsCode");
+
+htmlCode.value = localStorage.getItem("notes");
+cssCode.value = localStorage.getItem("input");
+jsCode.value = localStorage.getItem("data");
+
+let cancel
+htmlCode.addEventListener("keyup", event =>{
+if (cancel) clearTimeout(cancel)
+cancel = setTimeout(() =>{
+}, 1000)
+localStorage.setItem("notes", event.target.value)
+})
+cssCode.addEventListener("keyup", e =>{
+if (cancel) clearTimeout(cancel)
+cancel = setTimeout(() =>{
+}, 1000)
+localStorage.setItem("input", cssCode.value)
+})
+
+jsCode.addEventListener("keyup", event =>{
+if (cancel) clearTimeout(cancel)
+cancel = setTimeout(() =>{
+}, 1000)
+localStorage.setItem("data", event.target.value)
+})
+
+
+
+const htmlCode1 = document.getElementById('htmlCode');
+const statusText = document.getElementById('status');
+const saveButton = document.getElementById('save-button');
+
+let savedText = localStorage.getItem('text');
+if (savedText) {
+  htmlCode1.value = savedText;
+}
+
+function save() { 
+// Save the contents of the textarea using an API call
+  console.log(htmlCode1.value);
+  localStorage.setItem('text', htmlCode1.value);
+  statusText.textContent = 'Saved';
+}
+
+let timeout; htmlCode1.addEventListener('input', () => {
+  statusText.textContent = 'Unsaved changes';
+  clearTimeout(timeout);
+  timeout = setTimeout(save, 1000);
+});
+
+saveButton.addEventListener('click', save);
