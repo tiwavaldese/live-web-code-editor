@@ -5,8 +5,8 @@ hello there, your task is to implement auto-save functionality with localStorage
 fork the repository and start working on it.
 
 best of luck.
--[]
-# Portfolio
+
+-[]# Portfolio
 > The project designed to improve coding skills and upgrading knowledgments on CSS, HTML, JavaScript.
 
 ## Built With
