@@ -64,14 +64,14 @@ npx hint .
 ## Visit My GitHub Page
 
  *Live demo* 
-[Live link](https://tiwavaldese.github.io/Portfolio-Project/)
+[Live link] https://tiwavaldese.github.io/Portfolio-Project/
 
 ## Authors
 
 👤*Douanla Tiwa Valdese*
 
-- GitHub: [tiwavaldese](https://github.com/tiwavaldese)
-- LinkedIn: [DOUANLA TIWA VALDESE](https://www.linkedin.com/in/douanla-tiwa-valdese-3b2336204/)
+- GitHub: [tiwavaldese] https://github.com/tiwavaldese
+- LinkedIn: [DOUANLA TIWA VALDESE] https://www.linkedin.com/in/douanla-tiwa-valdese-3b2336204/
 
 ## 🤝 Contributing
 
